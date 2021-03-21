@@ -59,5 +59,15 @@ window.addEventListener('keydown', function(e) {
 
   const keys = document.querySelectorAll('.piano-key');
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+  keys.forEach(key => key.addEventListener('click', playAudio));
+
+  function playAudio(e) {
+      let key = e.target;
+      const letter = document.getElementById(key.dataset.letter)
+      if(!letter) return;
+      letter.currentTime = 0;
+      letter.play();
+      key.classList.add('active');
+  }
 
   

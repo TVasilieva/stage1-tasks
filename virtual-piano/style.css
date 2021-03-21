@@ -94,12 +94,20 @@ body {
 	transition:all 0.03s;
 	cursor: pointer;
 }
+.piano-key:active {
+	transform: scale(0.95);
+	transition: all .30s;
+}
 .piano-key:hover {
-	background-color: red;
+	background-color: #fff;
 }
 .playing{
 	transform: scale(0.95);
 	transition: all .30s;
+	background-color: #fff;
+}
+.piano-key::after{
+	color:#00b4a4;
 }
 .keys-sharp {
 	position: absolute;

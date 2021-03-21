@@ -33,15 +33,15 @@
       <div class="piano-key" data-key="75" data-letter="K" data-note="a"></div>
       <div class="piano-key" data-key="76" data-letter="L" data-note="b"></div>
       <div class="keys-sharp">
-        <div class="piano-key sharp" data-letter="R" data-note="c♯"></div>
-        <div class="piano-key sharp" data-letter="T" data-note="d♯"></div>
+        <div class="piano-key sharp" data-key="82" data-letter="R" data-note="c♯"></div>
+        <div class="piano-key sharp" data-key="84" data-letter="T" data-note="d♯"></div>
         <div class="piano-key sharp none"></div>
-        <div class="piano-key sharp" data-letter="U" data-note="f♯"></div>
-        <div class="piano-key sharp" data-letter="I" data-note="g♯"></div>
-        <div class="piano-key sharp" data-letter="O" data-note="a♯"></div>
+        <div class="piano-key sharp" data-key="85" data-letter="U" data-note="f♯"></div>
+        <div class="piano-key sharp" data-key="73" data-letter="I" data-note="g♯"></div>
+        <div class="piano-key sharp" data-key="79" data-letter="O" data-note="a♯"></div>
       </div>
     </div>
-    <button class="fullscreen openfullscreen" onclick=" toggleFullscreen();"></button>
+    <button class="fullscreen openfullscreen" onclick="toggleFullscreen();"></button>
   </main>
   <footer class="footer">
     <div class="footer-container">
@@ -52,14 +52,18 @@
     </div>
   </footer>
   <script src="script.js"></script>
-  <audio data-key="68" src="assets/audio/c.mp3"></audio>
-  <audio data-key="70" src="assets/audio/d.mp3"></audio>
-  <audio data-key="71" src="assets/audio/e.mp3"></audio>
-  <audio data-key="72" src="assets/audio/f.mp3"></audio>
-  <audio data-key="74" src="assets/audio/g.mp3"></audio>
-  <audio data-key="75" src="assets/audio/a.mp3"></audio>
-  <audio data-key="76" src="assets/audio/b.mp3"></audio>
-  <audio data-key="Space" src="assets/audio/b.mp3"></audio>
+  <audio id="D" data-key="68" src="assets/audio/c.mp3"></audio>
+  <audio id="F" data-key="70" src="assets/audio/d.mp3"></audio>
+  <audio id="G" data-key="71" src="assets/audio/e.mp3"></audio>
+  <audio id="H" data-key="72" src="assets/audio/f.mp3"></audio>
+  <audio id="J" data-key="74" src="assets/audio/g.mp3"></audio>
+  <audio id="K" data-key="75" src="assets/audio/a.mp3"></audio>
+  <audio id="L" data-key="76" src="assets/audio/b.mp3"></audio>
+  <audio id="R" data-key="82" src="assets/audio/c♯.mp3"></audio>
+  <audio id="T" data-key="84" src="assets/audio/d♯.mp3"></audio>
+  <audio id="U" data-key="85" src="assets/audio/f♯.mp3"></audio>
+  <audio id="I" data-key="73" src="assets/audio/g♯.mp3"></audio>
+  <audio id="O" data-key="79" src="assets/audio/a♯.mp3"></audio>
 </body>
 
 </html>
